@@ -121,3 +121,4 @@ setInterval(()=>{
  h.style.left=Math.random()*100+"vw";h.style.fontSize=10+Math.random()*18+"px";h.style.color=["#ff4f91","#e95c9d","#b75c9b"][Math.floor(Math.random()*3)];
  $("#floatingHearts").appendChild(h);setTimeout(()=>h.remove(),6500);
 },900);
+show("lock");
