@@ -1,4 +1,4 @@
-# Her-brdy — Upgraded For My Love 🤍
+# For My Love 🤍
 
 This version keeps the original Her-brdy sequence/design concept and adds the new surprises.
 
