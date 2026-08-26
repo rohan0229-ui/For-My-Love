@@ -1,9 +1,9 @@
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;font-family:"Poppins",sans-serif}
-body{background:#fff1f7;color:#421a31;overflow-x:hidden}
+body{background:#fff1f7;color:#421a31;overflow:hidden}
 button{font:inherit;cursor:pointer}
-.page{display:none;min-height:100vh;min-height:100svh;padding:24px 18px;place-items:center;position:relative;overflow:hidden;background:linear-gradient(145deg,#fff8fb,#fcebf3 55%,#f5e1eb)}
-.page.active{display:grid}
+.page{display:none !important;min-height:100vh;min-height:100svh;padding:24px 18px;place-items:center;position:relative;overflow:hidden;background:linear-gradient(145deg,#fff8fb,#fcebf3 55%,#f5e1eb)}
+.page.active{display:grid !important}
 .page:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.8),transparent 25%),radial-gradient(circle at 80% 70%,rgba(242,170,205,.16),transparent 30%)}
 .intro-card,.opening-card,.birthday-card,.surprise-card,.final-card{position:relative;z-index:2;width:min(850px,100%);text-align:center;padding:48px 28px;border-radius:34px;background:rgba(255,250,252,.76);border:1px solid rgba(110,54,82,.12);box-shadow:0 28px 70px rgba(83,31,58,.12);backdrop-filter:blur(12px)}
 .intro-card{min-height:88svh;display:flex;flex-direction:column;justify-content:center;align-items:center}
