@@ -23,7 +23,14 @@ $$(".keypad button").forEach(b=>b.onclick=()=>{
   const k=b.dataset.key;
   if(k==="clear") entered=entered.slice(0,-1);
   else if(k==="enter"){
-    if(entered===code){entered="";$("#error").textContent="";dots();show("opening");heartBurst()}
+    if(entered===code){
+  unlocked = true;
+  entered="";
+  $("#error").textContent="";
+  dots();
+  show("opening");
+  heartBurst();
+}
     else{$("#error").textContent="Not quite. Try again ❤️";entered=""}
   } else if(entered.length<4) entered+=k;
   dots();
