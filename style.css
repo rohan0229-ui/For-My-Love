@@ -262,7 +262,7 @@ h3{
    ===================================================== */
 
 .story-page{
-  display:flex !important;
+  display:none;
   flex-direction:column;
   justify-content:flex-start;
   align-items:center;
@@ -272,6 +272,10 @@ h3{
   overflow-y:auto;
   padding-top:55px;
   padding-bottom:70px;
+}
+
+.story-page.active{
+  display:flex !important;
 }
 
 .story-head{
