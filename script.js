@@ -1,10 +1,18 @@
 const pages=["intro","lock","opening","birthday","story","letter","surprise1","surprise2","surprise3","surprise4","surprise5","finalLetter","finalVideo","final"];
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 
+let unlocked = false;
+
 function show(id){
-  pages.forEach(p=>$("#"+p)?.classList.remove("active"));
-  $("#"+id)?.classList.add("active");
-  window.scrollTo({top:0,behavior:"smooth"});
+  // Do not allow access to anything except intro and lock
+  // until the correct password has been entered.
+  if (!unlocked && id !== "intro" && id !== "lock") {
+    id = "lock";
+  }
+
+  pages.forEach(p => $("#" + p)?.classList.remove("active"));
+  $("#" + id)?.classList.add("active");
+  window.scrollTo({top:0, behavior:"smooth"});
 }
 $$("[data-go]").forEach(b=>b.onclick=()=>show(b.dataset.go));
 
